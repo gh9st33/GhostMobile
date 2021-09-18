@@ -26,7 +26,7 @@ class JoystickDataPacketTranslator():
     #This is Triangle, used to reset camera position
     triangle = None
 
-    def createDataString(self, l3x, l3y, r3x, r3y, l2, r2, l1, r1, triangle):
+    def createDataString(self, l3x, l3y, r3x, r3y, l2, r2, l1, r1):
         dataString = "l3x:%s" % l3x
         dataString += " l3y:%s" % l3y
         dataString += " r3x:%s" % r3x
@@ -35,7 +35,6 @@ class JoystickDataPacketTranslator():
         dataString += " r2:%s" % r2
         dataString += " l1:%s" % l1
         dataString += " r1:%s" % r1
-        dataString += " triangle:%s" % triangle
 
         return dataString
 
@@ -57,5 +56,3 @@ class JoystickDataPacketTranslator():
                 self.l1 = float(dat.split(":")[1])
             if dat.startswith("r1"):
                 self.r1 = float(dat.split(":")[1])
-            if dat.startswith("triangle"):
-                self.triangle = float(dat.split(":")[1])
