@@ -27,14 +27,14 @@ class JoystickDataPacketTranslator():
     triangle = None
 
     def createDataString(self, l3x, l3y, r3x, r3y, l2, r2, l1, r1):
-        dataString = "l3x:%s" % l3x
-        dataString += " l3y:%s" % l3y
-        dataString += " r3x:%s" % r3x
-        dataString += " r3y:%s" % r3y
-        dataString += " l2:%s" % l2
-        dataString += " r2:%s" % r2
-        dataString += " l1:%s" % l1
-        dataString += " r1:%s" % r1
+        dataString = f"l3x:{l3x}"
+        dataString += f" l3y:{l3y}"
+        dataString += f" r3x:{r3x}"
+        dataString += f" r3y:{r3y}"
+        dataString += f" l2:{l2}"
+        dataString += f" r2:{r2}"
+        dataString += f" l1:{l1}"
+        dataString += f" r1:{r1}"
 
         return dataString
 
