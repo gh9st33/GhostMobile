@@ -11,7 +11,7 @@ pygame.init()
 j = pygame.joystick.Joystick(0)
 j.init()
 
-print('Initialized Joystick : %s' % j.get_name())
+print(f'Initialized Joystick : {j.get_name()}')
 
 # IP OF RECEIVER
 #UDP_IP = "192.168.74.51"
